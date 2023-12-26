@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(42, 41, 41);
+    color: white;
+}
+
+.container{
+    height: 700px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("netflix_bg.jpg");
+    background-size: cover;
+}
+.navbar{
+    height: 90px;
+}
+.logo{
+    background-image: url("netflix_logo.png");
+    height: 40px;
+    width: 155px;
+    background-size: cover;    
+}
+.nav_element{
+    height: 100%;
+    margin: 0 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang-select{
+    height: 32px;
+    width: 120px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 3px;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    margin-right: 25px;
+    letter-spacing: 1px;
+}
+span button{
+    height: 32.4px;
+    width: 70px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border: none;
+   
+}
+.border:hover{
+    background-color: rgb(197, 19, 19);
+    border: 1px solid white;
+}
+
+.border-lang:hover{
+   border: 1px solid white;
+}
+
+
+
+
+/* mid page */
+
+.page-content{
+   position: absolute;
+   top: 40%;
+   left: 15.5%;
+   line-height: 3.5rem;
+}
+.page-content h1{
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+
+.page-content p{
+    font-size: 1.6rem;
+}
+
+.first-para{
+   margin-left: 30%;   
+}
+
+.second-para{
+    margin-left: 10%; 
+}
+
+.mid-input-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mid-input-button input{
+    height: 55px;
+    width: 100%;
+    max-width: 24rem;
+    background: transparent;
+    border: 0.1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.8px;
+} 
+
+
+.mid-input-button button{
+    width: 10rem;
+    height: 55px;
+    margin-left: 12px;
+    border-radius: 3.4px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.mid-input-button button:hover{
+    background-color: rgb(197, 19, 19);
+    border: 1px solid white;
+}
+
+
+/* box part */
+
+/* box1 */
+
+.box-element{
+    height: 540px;
+    background-color: black;
+    margin: 10px 0;
+}
+.element{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.para1{
+    margin-right: 40px;
+    font-family: sans-serif;
+
+}
+
+
+.image1{
+    height: 280px;
+    width: 500px;
+    background-image: url("tv-box1.webp");
+    background-size: cover;
+    margin-left: 60px;
+}
+
+.para1 h2{
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.para1 p{
+    font-size: 1.4rem;   
+}
+  
+
+/* box 2 */
+
+.image2{
+    height: 450px;
+    width: 500px;
+    background-image: url("tv-box2.jpg");
+    background-size: cover;
+    position: relative;
+    bottom: 15px;
+    right: 8%;
+}
+
+
+.para2{
+    font-family: sans-serif;
+}
+
+.para2 h2{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    
+}
+
+.para2 p{
+    font-size: 1.4rem;
+}
+
+
+/* box 3 */
+
+.image3{
+    height: 450px;
+    width: 580px;
+    background-image: url("tv-box3.png"); 
+    background-size: cover;
+    position: relative;
+    left: 1px;
+}
+
+
+.para3{
+    font-family: sans-serif;
+}
+
+
+.para3 h2{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    
+}
+
+.para3 p{
+    font-size: 1.4rem;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    height: 350px;
+    background-color: black;
+    padding-top: 45px;
+}
+    
+
+
+
+.footer-element{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.footer-element  ul a{
+    display: block;
+    line-height: 2rem;
+    color: rgb(255, 226, 188);
+    text-decoration: none;
+
+}
+
+.footer-element  ul p a{
+    display: inline-block;
+    text-decoration: underline;
+   
+}
+.footer-element  ul p{
+   position: relative;
+   bottom: 20px;
+}
+.footer-element  ul span{
+    position: relative;
+    top: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    
+}
+
+
+
+
