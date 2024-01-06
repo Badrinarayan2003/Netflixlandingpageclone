@@ -21,7 +21,8 @@ body{
     background-image: url("netflix_logo.png");
     height: 40px;
     width: 155px;
-    background-size: cover;    
+    background-size: cover; 
+    cursor: pointer;   
 }
 .nav_element{
     height: 100%;
@@ -41,6 +42,7 @@ body{
     font-weight: 700;
     margin-right: 25px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 span button{
     height: 32.4px;
@@ -50,9 +52,9 @@ span button{
     color: white;
     font-weight: 700;
     border: none;
-   
+    cursor: pointer;
 }
-.border:hover{
+.signin-button:hover{
     background-color: rgb(197, 19, 19);
     border: 1px solid white;
 }
@@ -123,6 +125,7 @@ span button{
     color: white;
     font-size: 1.4rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .mid-input-button button:hover{
