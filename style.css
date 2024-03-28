@@ -1,39 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-body{
+
+body {
     background-color: rgb(42, 41, 41);
     color: white;
 }
 
-.container{
-    height: 700px;
+.container {
+    height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("netflix_bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("image/netflix_bg.jpg");
     background-size: cover;
-}
-.navbar{
-    height: 90px;
-}
-.logo{
-    background-image: url("netflix_logo.png");
-    height: 40px;
-    width: 155px;
-    background-size: cover; 
-    cursor: pointer;   
-}
-.nav_element{
-    height: 100%;
-    margin: 0 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.lang-select{
-    height: 32px;
-    width: 120px;
+
+.navbar {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+}
+
+.logo {
+    background-image: url("image/netflix_logo.png");
+    height: 40px;
+    width: 155px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.nav_element {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lang-select {
+    padding: 0.4rem 1.3rem;
     font-size: 0.9rem;
     text-align: center;
     border-radius: 3px;
@@ -44,9 +53,9 @@ body{
     letter-spacing: 1px;
     cursor: pointer;
 }
-span button{
-    height: 32.4px;
-    width: 70px;
+
+span button {
+    padding: 0.5rem 0.9rem;
     border-radius: 4px;
     background-color: red;
     color: white;
@@ -54,56 +63,46 @@ span button{
     border: none;
     cursor: pointer;
 }
-.signin-button:hover{
+
+.signin-button:hover {
     background-color: rgb(197, 19, 19);
     border: 1px solid white;
 }
 
-.border-lang:hover{
-   border: 1px solid white;
+.border-lang:hover {
+    border: 1px solid white;
 }
-
-
 
 
 /* mid page */
 
-.page-content{
-   position: absolute;
-   top: 40%;
-   left: 15.5%;
-   line-height: 3.5rem;
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3.5rem;
 }
-.page-content h1{
-    font-family: sans-serif;
-    font-size: 3rem;
+
+.page-content h1 {
+    font-size: 2.5rem;
     font-weight: 800;
-
+    text-align: center;
 }
 
-
-.page-content p{
-    font-size: 1.6rem;
+.page-content p {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.first-para{
-   margin-left: 30%;   
-}
-
-.second-para{
-    margin-left: 10%; 
-}
-
-.mid-input-button{
+.mid-input-button {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.mid-input-button input{
-    height: 55px;
-    width: 100%;
-    max-width: 24rem;
+.mid-input-button input {
+    padding: 0.5rem 1rem;
     background: transparent;
     border: 0.1px solid white;
     border-radius: 3px;
@@ -112,12 +111,11 @@ span button{
     font-weight: 700;
     text-align: left;
     letter-spacing: 0.8px;
-} 
+}
 
 
-.mid-input-button button{
-    width: 10rem;
-    height: 55px;
+.mid-input-button button {
+    padding: 1rem 1.3rem;
     margin-left: 12px;
     border-radius: 3.4px;
     border: none;
@@ -128,159 +126,122 @@ span button{
     cursor: pointer;
 }
 
-.mid-input-button button:hover{
+.mid-input-button button:hover {
     background-color: rgb(197, 19, 19);
     border: 1px solid white;
 }
 
-
 /* box part */
-
 /* box1 */
 
-.box-element{
+.box-element {
     height: 540px;
     background-color: black;
     margin: 10px 0;
 }
-.element{
+
+.element {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-
+    padding: 0 2rem;
 }
 
-.para1{
+.para1 {
     margin-right: 40px;
-    font-family: sans-serif;
-
 }
 
-
-.image1{
+.image1 {
     height: 280px;
     width: 500px;
-    background-image: url("tv-box1.webp");
+    background-image: url("image/tv-box1.webp");
     background-size: cover;
     margin-left: 60px;
 }
 
-.para1 h2{
-    font-size: 3.5rem;
-    font-family: sans-serif;
-    font-weight: 800;
+.para1 h2 {
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 15px;
 }
-.para1 p{
-    font-size: 1.4rem;   
+
+.para1 p {
+    font-size: 1.2rem;
 }
-  
 
 /* box 2 */
 
-.image2{
+.image2 {
     height: 450px;
     width: 500px;
-    background-image: url("tv-box2.jpg");
+    background-image: url("image/tv-box2.jpg");
     background-size: cover;
     position: relative;
     bottom: 15px;
     right: 8%;
 }
 
+.para2 h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
 
-.para2{
-    font-family: sans-serif;
 }
 
-.para2 h2{
-    font-size: 3rem;
-    font-family: sans-serif;
-    font-weight: 800;
-    
+.para2 p {
+    font-size: 1.2rem;
 }
-
-.para2 p{
-    font-size: 1.4rem;
-}
-
 
 /* box 3 */
 
-.image3{
+.image3 {
     height: 450px;
     width: 580px;
-    background-image: url("tv-box3.png"); 
+    background-image: url("image/tv-box3.png");
     background-size: cover;
     position: relative;
     left: 1px;
 }
 
-
-.para3{
-    font-family: sans-serif;
-}
-
-
-.para3 h2{
+.para3 h2 {
     font-size: 3rem;
-    font-family: sans-serif;
-    font-weight: 800;
-    
+    font-weight: 700;
 }
 
-.para3 p{
-    font-size: 1.4rem;
+.para3 p {
+    font-size: 1.2rem;
 }
-
-
-
 
 /* footer */
 
-.footer{
+.footer {
     height: 350px;
     background-color: black;
     padding-top: 45px;
 }
-    
 
-
-
-.footer-element{
+.footer-element {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
-.footer-element  ul a{
+.footer-element ul a {
     display: block;
     line-height: 2rem;
     color: rgb(255, 226, 188);
     text-decoration: none;
-
 }
 
-.footer-element  ul p a{
+.footer-element ul p a {
     display: inline-block;
     text-decoration: underline;
-   
 }
-.footer-element  ul p{
-   position: relative;
-   bottom: 20px;
-}
-.footer-element  ul span{
+
+
+.footer-element ul span {
     position: relative;
     top: 25px;
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: sans-serif;
-    
 }
-
-
-
-
